@@ -160,9 +160,9 @@ namespace Bokningssystem
             for (int i = 1; i < 22; i++)
             {
                 bussFältKopia[i, 0] = bussFält[i, 0]; //namn
-                bussFältKopia[i, 1] = bussFält[i, 0]; // födelsedatum
-                bussFältKopia[i, 2] = bussFält[i, 0]; //kön
-                bussFältKopia[i, 3] = bussFält[i, 0]; //ålder
+                bussFältKopia[i, 1] = bussFält[i, 1]; // födelsedatum
+                bussFältKopia[i, 2] = bussFält[i, 2]; //kön
+                bussFältKopia[i, 3] = bussFält[i, 3]; //ålder
                 bussFältKopia[i, 4] = i.ToString(); //detta blir sedan platsnunmmret
 
             }
