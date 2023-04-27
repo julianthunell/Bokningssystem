@@ -150,7 +150,7 @@ namespace Bokningssystem
                 {
                     if (bussFält[i, 3] == null)
                     {
-                        bussFält[i, 0] = 0.ToString();
+                        bussFält[i, 3] = 0.ToString();
                     }
                 }
                 for (int i = 1; i < 22 - 1; i++)
@@ -178,7 +178,10 @@ namespace Bokningssystem
             }
             for (int i = 1; i < 22; i++)
             {
-                Console.WriteLine(bussFält[i,3]);
+                if (bussFält[i, 3] != "0")
+                {
+                    Console.WriteLine("Namn: " + bussFält[i,0] +" | "+ "födelsedatum: " + bussFält[i, 1] + " | " + "kön: " + bussFält[i, 2]);
+                }
             }
         }
         static void meny(){
