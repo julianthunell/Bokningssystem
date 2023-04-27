@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "syJ1rHN2+lcf1QIJ0r4gtXwGRYz5rEiDz/TntQCgxFw/SITSyBqUHtoVJ0DKGYL7hHq/wF/bX+6DQzSnp4rX8Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\julian.thunellaxnas\\source\\repos\\Bokningssystem\\Bokningssystem\\Bokningssystem.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\julian.thunellaxnas\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.25\\microsoft.netcore.app.host.win-x64.3.1.25.nupkg.sha512"
+  ],
+  "logs": []
+}

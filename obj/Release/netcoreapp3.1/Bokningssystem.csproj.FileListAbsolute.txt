@@ -1,0 +1,12 @@
+C:\Users\julian.thunellaxnas\source\repos\Bokningssystem\Bokningssystem\bin\Release\netcoreapp3.1\Bokningssystem.exe
+C:\Users\julian.thunellaxnas\source\repos\Bokningssystem\Bokningssystem\bin\Release\netcoreapp3.1\Bokningssystem.deps.json
+C:\Users\julian.thunellaxnas\source\repos\Bokningssystem\Bokningssystem\bin\Release\netcoreapp3.1\Bokningssystem.runtimeconfig.json
+C:\Users\julian.thunellaxnas\source\repos\Bokningssystem\Bokningssystem\bin\Release\netcoreapp3.1\Bokningssystem.runtimeconfig.dev.json
+C:\Users\julian.thunellaxnas\source\repos\Bokningssystem\Bokningssystem\bin\Release\netcoreapp3.1\Bokningssystem.dll
+C:\Users\julian.thunellaxnas\source\repos\Bokningssystem\Bokningssystem\bin\Release\netcoreapp3.1\Bokningssystem.pdb
+C:\Users\julian.thunellaxnas\source\repos\Bokningssystem\Bokningssystem\obj\Release\netcoreapp3.1\Bokningssystem.AssemblyInfoInputs.cache
+C:\Users\julian.thunellaxnas\source\repos\Bokningssystem\Bokningssystem\obj\Release\netcoreapp3.1\Bokningssystem.AssemblyInfo.cs
+C:\Users\julian.thunellaxnas\source\repos\Bokningssystem\Bokningssystem\obj\Release\netcoreapp3.1\Bokningssystem.csproj.CoreCompileInputs.cache
+C:\Users\julian.thunellaxnas\source\repos\Bokningssystem\Bokningssystem\obj\Release\netcoreapp3.1\Bokningssystem.dll
+C:\Users\julian.thunellaxnas\source\repos\Bokningssystem\Bokningssystem\obj\Release\netcoreapp3.1\Bokningssystem.pdb
+C:\Users\julian.thunellaxnas\source\repos\Bokningssystem\Bokningssystem\obj\Release\netcoreapp3.1\Bokningssystem.genruntimeconfig.cache
