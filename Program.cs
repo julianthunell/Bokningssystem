@@ -19,9 +19,23 @@ namespace Bokningssystem
             Console.WriteLine("Vill du boka fönster plats?");
             Console.WriteLine("1. ja");
             Console.WriteLine("2. nej");
+            Boolean rätt = true;
+            int val = 0;
 
-            int val = Convert.ToInt32(Console.ReadLine());
-
+            while (rätt == true)
+            {
+                try
+                {
+                    val = Convert.ToInt32(Console.ReadLine());
+                    rätt = false;
+                }
+                catch (FormatException)
+                {
+                    Console.WriteLine("Du måste välja ett nummer mellan 1 och 2");
+                    rätt = true;
+                }
+                rätt = false;
+            }
             Boolean vanligPlats = false;
             if (val == 2)
                 vanligPlats = true;
@@ -141,37 +155,53 @@ namespace Bokningssystem
         }
         static void sorteraPassagerare()
         {
+            //först måste fältet kopieras
+            string[,] bussFältKopia = new string[22, 5];
+            for (int i = 1; i < 22; i++)
+            {
+                bussFältKopia[i, 0] = bussFält[i, 0]; //namn
+                bussFältKopia[i, 1] = bussFält[i, 0]; // födelsedatum
+                bussFältKopia[i, 2] = bussFält[i, 0]; //kön
+                bussFältKopia[i, 3] = bussFält[i, 0]; //ålder
+                bussFältKopia[i, 4] = i.ToString(); //detta blir sedan platsnunmmret
+
+            }
+
+
+
+
+            //sortering börjar här
             Boolean swap = true;
-            string[] tempFält = new string[4];
+            string[] tempFält = new string[5];
             while (swap)
             {
                 swap = false;
                 for (int i = 1; i < 22; i++)
                 {
-                    if (bussFält[i, 3] == null)
+                    if (bussFältKopia[i, 3] == null)
                     {
-                        bussFält[i, 3] = 0.ToString();
+                        bussFältKopia[i, 3] = 0.ToString();
                     }
                 }
                 for (int i = 1; i < 22 - 1; i++)
                 {
-                    int tal1 = Int32.Parse(bussFält[i, 3]);
-                    int tal2 = Int32.Parse(bussFält[i+1, 3]);
+                    int tal1 = Int32.Parse(bussFältKopia[i, 3]);
+                    int tal2 = Int32.Parse(bussFältKopia[i+1, 3]);
 
                     if (tal1 < tal2)
                     {
                         swap = true;
-                        for (int j = 0; j < 4; j++)
+                        for (int j = 0; j < 5; j++)
                         {
-                            tempFält[j] = bussFält[i,j];
+                            tempFält[j] = bussFältKopia[i,j];
                         }
-                        for (int j = 0; j < 4; j++)
+                        for (int j = 0; j < 5; j++)
                         {
-                            bussFält[i, j] = bussFält[i + 1, j];
+                            bussFältKopia[i, j] = bussFältKopia[i + 1, j];
                         }
-                        for (int j = 0; j < 4; j++)
+                        for (int j = 0; j < 5; j++)
                         {
-                            bussFält[i + 1, j] = tempFält[j];
+                            bussFältKopia[i + 1, j] = tempFält[j];
                         }
                     }
                 }
@@ -180,7 +210,7 @@ namespace Bokningssystem
             {
                 if (bussFält[i, 3] != "0")
                 {
-                    Console.WriteLine("Namn: " + bussFält[i,0] +" | "+ "födelsedatum: " + bussFält[i, 1] + " | " + "kön: " + bussFält[i, 2]);
+                    Console.WriteLine("Namn: " + bussFältKopia[i, 0] + " | " + "födelsedatum: " + bussFältKopia[i, 1] + " | " + "kön: " + bussFältKopia[i, 2] + " | " + "plats: " + bussFältKopia[i,4]);
                 }
             }
         }
