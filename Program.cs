@@ -24,7 +24,6 @@ namespace Bokningssystem
             Console.WriteLine("Ifall du inte vill boka fönster tryck valfri tangent.");
             Boolean rätt = true;
             int val = 0;
-
             while (rätt == true)
             {
                 try
@@ -39,9 +38,6 @@ namespace Bokningssystem
                 }
                 rätt = false;
             }
-            Boolean vanligPlats = false;
-            if (val == 2)
-                vanligPlats = true;
             //börjar söka igenom för ledig plats
             int plats = 0;
             Boolean adderaEtt = true;
@@ -54,7 +50,7 @@ namespace Bokningssystem
                         plats++;
                         if (bussFält[plats, 2] == null)
                             platsHittad = plats;
-                        if (val != 2)    
+                        if (val == 1)    
                             adderaEtt = false;
                     }
                     else
@@ -312,7 +308,7 @@ namespace Bokningssystem
                     system = false;
                     break;
                 default:
-                    Console.WriteLine();
+                    Console.WriteLine("Val måste vara mellan 1-6");
                     break;
                 
             }
