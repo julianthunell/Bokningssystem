@@ -96,6 +96,10 @@ namespace Bokningssystem
                     Console.WriteLine("Fel format på personnummer försök igen");
                     rätt2 = true;
                 }
+                catch(System.OverflowException)
+                {
+                    Console.WriteLine("Max antal siffror 8=YYYYMMDD");
+                }
                 }
                 Console.WriteLine("Ange kön");
                 bussFält[plats, 2] = Console.ReadLine();
